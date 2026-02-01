@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_レイヤー_1" data-name=" レイヤー 1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 583 199">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        font-family: FuturaPT-Demi, 'Futura PT';
+        font-size: 76.5px;
+        font-weight: 300;
+      }
+
+      .cls-1, .cls-2 {
+        isolation: isolate;
+      }
+    </style>
+  </defs>
+  <g id="SUMIBI_YAKITORI_RYO" data-name="SUMIBI YAKITORI RYO" class="cls-2">
+    <g class="cls-2">
+      <text class="cls-1" transform="translate(0 76.1)"><tspan x="0" y="0">SUMIBI YAKITORI</tspan></text>
+    </g>
+    <g class="cls-2">
+      <text class="cls-1" transform="translate(0 167.9)"><tspan x="0" y="0">RYO</tspan></text>
+    </g>
+  </g>
+</svg>

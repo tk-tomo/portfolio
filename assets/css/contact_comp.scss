@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+// -----------------------------
+// Contact Complete Page Specific
+// -----------------------------
+#contact_comp {
+  .contact_comp {
+    width: fit-content;
+    margin: 0 auto;
+
+    // p {
+    //   font-size: 18px;
+    // }
+
+    .form_button {
+      // width: fit-content;
+      margin: 30px auto 0;
+
+      a {
+        color: white;
+      }
+      &:hover a{
+        color: #333;
+      }
+    }
+  }
+}

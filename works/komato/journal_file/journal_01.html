@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../reset.min.css">
+    <link rel="stylesheet" href="journal.css">
+    <link rel="stylesheet" href="../menu.css">
+    <!-- rellax -->
+    <!-- <script src="js/rellax.min.js"></script> -->
+    <!-- swiper -->
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <!-- グーグルフォント -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Serif+JP:wght@200..900&display=swap" rel="stylesheet">
+    <title>komato journal.01</title>
+</head>
+<body>
+    <div id="js-mouse">
+        <!-- <p>viwe</p> -->
+    </div>
+    <header>
+        <div class="fv_img_mainvisual">
+            <img class="fv_img" src="journal01_img/journal_1.jpg" alt="">
+        </div>
+        <section class="fv_content">
+            <nav class="header_nav">
+                <div class="header-nav__padding header-nav__flex">
+                    <h1 class="logo">
+                        <a href="../index.html"><img src="../img/rogo.svg" alt=""></a>
+                    </h1>
+                    <ul class="head_right_list">
+                        <li class="head_right_cartbox">
+                            <a href="">
+                                <div class="header__link-wrapper">
+                                    <span>カート</span>
+                                    <span id="CartCount">
+                                        <span>0</span>
+                                    </span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <div class="hamburger">
+                                <span class="inner_line" id="line1"></span>
+                                <span class="inner_line" id="line2"></span>
+                                <span class="inner_line" id="line3"></span>
+                            </div>  
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="hamburger_open_content">
+                <div class="globalMenuPc">
+                    <div>
+                        <ul class="header-nav__flexPc">
+                            <li>
+                                <a href="" class="icon_box">
+                                    <span>ログイン</span>
+                                    <span class="person_icon icon"><img src="../img/person_icon.svg" alt=""></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="icon_box">
+                                    <span>お気に入り</span>
+                                    <span class="heart_icon icon"><img src="../img/heart_icon.svg" alt=""></span>
+                                </a>
+                            </li>
+                            <li class="head_right_cartbox min-width768px">
+                                <a href="">
+                                    <div class="header__link-wrapper">
+                                        <span>カート</span>
+                                        <span id="CartCount">
+                                            <span>0</span>
+                                        </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="sp_CartCount_flex">
+                                <div class="hamburger">
+                                    <span class="inner_line" id="line1"></span>
+                                    <span class="inner_line" id="line3"></span>
+                                </div> 
+                                <div class="head_right_cartbox max-width768px">
+                                    <a href="">
+                                        <div class="header__link-wrapper">
+                                            <span>カート</span>
+                                            <span id="CartCount">
+                                                <span>0</span>
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="globalMenuPc_section">
+                            <li><a href="../index.html#features" class="drawer__nav__link"><span>Features</span><span>小松トマトについて</span></a></li>
+                            <li><a href="../index.html#brand_vision" class="drawer__nav__link"><span>Brand vision</span><span>企業理念</span></a></li>
+                            <li><a href="../index.html#Journal" class="drawer__nav__link"><span>Journal</span><span>定期日誌</span></a></li>
+                            <li><a href="../product_file/product_menu.html" class="drawer__nav__link"><span>Product</span><span>製品</span></a></li>
+                            <li><a href="../news_file/news_menu.html" class="drawer__nav__link"><span>News</span><span>お知らせ</span></a></li>
+                        </ul>
+                        <ul class="globalMenuPc_sns">
+                            <li><a href="" class="icon_box"><span class="sns_icon_size"><img src="../img/x_hover.svg" alt=""></span><span>X</span></a></li>
+                            <li><a href="" class="icon_box"><span class="sns_icon_size"><img src="../img/facebook_hover.svg" alt=""></span><span>Facebook</span></a></li>
+                            <li><a href="" class="icon_box"><span class="sns_icon_size"><img src="../img/instagram_hover.svg" alt=""></span><span>Instagram</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="hamburger_img_content">
+                    <div class="hamburger_img">
+                        <img src="../img/hanburger_img.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="c-scrollButton u-list-section__animation c-page-journal-firstView__slider-scrollButton">
+            <div class="u-mo-crop" style="font-size:11rem" aria-label="Scroll for Discover">
+                <span class="c-scrollButton__text u-mo-crop__text u-mo-crop__text--inner">Scroll for Discover</span>
+                <span class="c-scrollButton__text u-mo-crop__text u-mo-crop__text--outer">Scroll for Discover</span></div>
+            <figure class="c-scrollButton-arrow">
+                <div class="c-scrollButton-arrow-inner"></div>
+                <!-- <img src="" alt=""> -->
+                <svg viewBox="0 0 6 7" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 7L-1.35122e-07 4.76995e-08L2.99999 2.33333L6 -4.76837e-07L3 7Z"></path></svg>
+            </figure>
+        </div>
+    </header>
+    <main>
+    <!-- ジャーナルセクション -->
+    <section>
+        <div class="l-page-journal-journalPage__article">
+            <div class="c-page-journal-heading c-page-journal-heading--inView">
+                <div class="c-page-journal-heading-top">
+                    <p>story</p>
+                    <span class="c-page-journal-heading-top-border"></span>
+                    <p>2024.10.20</p>
+                </div>
+                <div class="c-page-padding">
+                    <h2 class="c-page-journal-heading-numc">01.</h2>
+                    <div class="c-page-journal-heading-title-ja">
+                        <h3>小松とまとの栽培のプロセス</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="l-page-journal-journalPage__content l-page-journal-journalPage__article-content">
+                <div>
+                    <figure>
+                        <img src="journal01_img/journal_1.jpg" alt="">
+                    </figure>
+                </div>
+                <div class="c-article__cassette c-article__cassette--text">
+                    <p class="c-article__cassette--text-lead u-font-yu-min">小松トマトの栽培プロセスについて</p>
+                    <p class="c-article__cassette--text-body">小松の太陽をたっぷり浴びて育ったトマトは、その甘みが格別です。昼夜の寒暖差が大きい小松の気候は、トマトの糖度を上げ、濃厚な味 わいを生み出します。
+                        完熟したトマトは、口いっぱいに広がるジューシーな果汁と、甘酸っぱい香りが食欲をそそります。
+                        是非、地元産のトマトを味わってみてください。</p>
+                </div>
+                <div>
+                    <figure><img src="journal01_img/journal_2.jpg" alt=""></figure>
+                </div>
+                <div class="c-article__cassette c-article__cassette--text">
+                    <p class="c-article__cassette--text-lead u-font-yu-min">種まきと苗作り</p>
+                    <p class="c-article__cassette--text-body">・高品質なトマトの種を選定し、苗床に播種します。<br>
+                        ・発芽した苗は、十分な光と水を与えながら育成します。<br>
+                        ・病気に強く、美味しい実をつける品種のトマトを接木する場合もあります。</p>
+                </div>
+                <div class="c-article__cassette c-article__cassette--text">
+                    <p class="c-article__cassette--text-lead u-font-yu-min">小松トマトの美味しさの秘密</p>
+                    <p class="c-article__cassette--text-body">
+                        ・昼夜の寒暖差: 冷涼な気候と昼夜の寒暖差が、トマトの糖度を高めます。<br>
+                        ・太陽光: ハウス栽培により、トマトは十分な太陽光を浴びて育ちます。<br>
+                        ・水質: 良質な地下水を活用することで、トマトの味が引き立てられます。<br>
+                        ・栽培技術: 長年の経験と技術により、高品質なトマトを栽培しています。
+                    </p>
+                </div>
+                <div>
+                    <figure><img src="journal01_img/journal_3.jpg" alt=""></figure>
+                </div>
+                <div class="c-article__cassette c-article__cassette--text">
+                    <p class="c-article__cassette--text-lead u-font-yu-min">まとめ</p>
+                    <p class="c-article__cassette--text-body">小松トマトは、自然と人の手によって育まれた、こだわりのトマトです。その栽培プロセスは、単なる農作業ではなく、地域全体の取り組みと言えるでしょう。小松トマトの美味しさを支える背景には、生産者の情熱と、地域全体の協力があります。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ジャーナルセレクトセクション -->
+    <section class="journal_select_section">
+        <div>
+            <h2 class="hedding_journal">Journal</h2>
+            <div class="journal-card_content">
+                <div class="journal-card_box">
+                    <a href="#" id="#" class="journal01">
+                        <div class="journal-card-image"><img src="../img/journal01.jpg" alt=""></div>
+                        <div class="p-about-journal-card-info">
+                            <div class="p-about-journal-card-top">
+                                <p>story</p>
+                                <span class="p-about-journal-card-border"></span>
+                                <p>2024.10.20</p>
+                            </div>
+                            <div class="p-about-journal-card-heading">
+                                <div class="p-about-journal-card-heading--num">
+                                    <p class="journal-card_number">01.</p>
+                                </div>
+                                <div class="p-about-journal-card-title">
+                                    <p class="p-about-journal-card-title-ja">小松とまとの栽培のプロセス</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="journal-card_box">
+                    <a href="journal_02.html" id="#" class="journal01">
+                        <div class="journal-card-image"><img src="../img/journal02.jpg" alt=""></div>
+                        <div class="p-about-journal-card-info">
+                            <div class="p-about-journal-card-top">
+                                <p>story</p>
+                                <span class="p-about-journal-card-border"></span>
+                                <p>2024.10.27</p>
+                            </div>
+                            <div class="p-about-journal-card-heading">
+                                <div class="p-about-journal-card-heading--num">
+                                    <p class="journal-card_number">02.</p>
+                                </div>
+                                <div class="p-about-journal-card-title">
+                                    <p class="p-about-journal-card-title-ja">小松とまとの美味しさと秘訣</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        </section>
+    </main>
+        <footer>
+           <section class="footer_section">
+               <div class="snsList_section">
+                    <ul class="snsList_section_flex">
+                        <li>
+                            <a href="" class="snsList_content">
+                                <div class="snsList_hedding">
+                                    <h4>Instagram</h4>
+                                    <p>インスタグラム</p>
+                                </div>
+                                <div class="snsIcon">
+                                    <img src="../img/instagram_hover.svg" alt="" width="20px" height="20px">
+                                    <img src="../img/instagram.svg" alt="" width="20px" height="20px">
+                                </div>
+                                <p>商品の写真を多く<br>
+                                    投稿させて頂いております。</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="snsList_content">
+                                <div class="snsList_hedding">
+                                    <h4>X</h4>
+                                    <p>エックス</p>
+                                </div>
+                                <div class="snsIcon">
+                                    <img src="../img/x_hover.svg" alt="" width="20px" height="20.45px">
+                                    <img src="../img/x.svg" alt="" width="20px" height="20.45px">
+                                </div>
+                                <p>商品の写真を多く<br>
+                                    投稿させて頂いております。</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="snsList_content">
+                                <div class="snsList_hedding">
+                                    <h4>Instagram</h4>
+                                    <p>インスタグラム</p>
+                                </div>
+                                <div class="snsIcon">
+                                    <img src="../img/facebook_hover.svg" alt="" width="20px" height="19.87px">
+                                    <img src="../img/facebook.svg" alt="" width="20px" height="19.87px">
+                                </div>
+                                <p>商品の写真を多く<br>
+                                    投稿させて頂いております。</p>
+                            </a>
+                        </li>
+                    </ul>
+               </div>
+               <div class="footer_grobal_section">
+                   <div class="footer_grobal_flex">
+                        <div class="footer_grobal_left">
+                            <div class="footer_rogo"><img src="../img/footer_rogo.svg" alt=""></div>
+                        </div>
+                        <div class="footer_grobal_rigth">
+                            <div class="grobal_flex_wrap">
+                                <ul class="footer_grobal_list">
+                                    <li><a href="../index.html#features">Features</a></li>
+                                    <li><a href="../index.html#brand_vision" style="
+                                        white-space: nowrap;
+                                    ">Brand vision</a></li>
+                                    <li><a href="../index.html#Journal">Journal</a></li>
+                                </ul>
+                                <ul class="footer_grobal_list grobal_wrap">
+                                    <li><a href="#">Product</a></li>
+                                    <li><a href="../news_file/news_menu.html">News</a></li>
+                                </ul>
+                            </div>
+                            <span></span>
+                            <p class="copy">All Rights Reserved 2024 ©︎ kohigashi tomorou</p>
+                        </div>
+                   </div>
+               </div>
+            </section>
+           
+        </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <!-- <script src="js/parallax.min.js"></script> -->
+    <!-- <script src="js/option.js"></script>
+    <script src="js/rellax.js"></script> -->
+    <script src="../js/style.js"></script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+@charset "UTF-8";
+
+// -----------------------------
+// Contact Confirm Page Specific
+// -----------------------------
+.contact_confirm__wrapper {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 5px;
+  @media screen and (max-width: 768px) {
+     padding: 20px;
+  }
+  .contact_confirm-item {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+    }
+
+    dt {
+      width: 177px;
+      font-size: 16px;
+      font-weight: normal;
+
+      @media screen and (max-width: 768px) {
+        width: 100%;
+      }
+    }
+
+    dd {
+      width: calc(100% - 177px);
+      @media screen and (max-width: 768px) {
+        width: 100%;
+      }
+      .file-label{
+        position: relative;
+        width: 142px;
+        height: 38px;
+        background:white;
+        border: solid 1px #727272;
+        @media screen and (max-width: 768px) {
+          width: 132px;
+        }
+        &:nth-of-type(1){
+          margin-bottom: 10px;
+        }
+        .wpcf7-form-control-wrap{
+          display: contents;
+          input[type=file]{
+            display: none;
+          }
+        }
+        .input-text{
+          position: absolute;
+          top: 50%;
+          left: 13px;
+          transform: translateY(-50%);
+          @media screen and (max-width: 768px) {
+            left: 15px;
+            font-size: 14px;
+          }
+        }
+        .input-name{
+          display: block;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          left: 150px;
+          white-space: nowrap;
+          font-size: 14px;
+          @media screen and (max-width: 768px) {
+              left: 142px;
+          }
+        }
+      }
+      .fail-ann_txt{
+        font-size: 14px;
+        letter-spacing: 0.1rem;
+        margin-bottom: 10px;
+        @media screen and (max-width: 768px) {
+        letter-spacing: 0.05rem;
+        }
+      }
+    }
+  }
+}
+#contact_confirm-page{
+  .contact-confirm_flex{
+    display: flex;
+    gap: 20px;
+    margin: 100px auto 0;
+    position: relative;
+    justify-content: center;
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+        margin: 40px auto 0;
+    }
+  }
+  .form_button{
+    margin:0;
+     @media screen and (max-width: 768px) {
+       width: 90%;
+       margin:0 auto;
+    }
+  }
+  .wpcf7-spinner{
+    position: absolute;
+  }
+}

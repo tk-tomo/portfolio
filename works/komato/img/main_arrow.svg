@@ -1,0 +1,10 @@
+
+<!-- <svg width="21" height="12" viewBox="0 0 21 12" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="svg-symbol">
+  <symbol viewBox="0 0 21 12" id="SvgMovieArrow">
+   <path d="M21 6.25L-5.09791e-07 11.6627L-3.66013e-08 0.83734L21 6.25Z" fill="white"/>  </symbol>
+</svg> -->
+<svg width="21" height="12" viewBox="0 0 21 12" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <symbol viewBox="0 0 21 12" id="SvgMovieArrow">
+    <path d="M21 6.25L-5.09791e-07 11.6627L-3.66013e-08 0.83734L21 6.25Z" fill="white"/>
+  </symbol>
+  <use xlink:href="#SvgMovieArrow" /> </svg>

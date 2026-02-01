@@ -1,0 +1,387 @@
+@charset "UTF-8";
+
+// -----------------------------
+// Contact Page Specific Styles
+// -----------------------------
+main {
+    margin-top: 192px;
+  
+    @media screen and (max-width: 768px) {
+      margin-top: 100px;
+    }
+  }
+// -----------------------------
+// Navigation
+// -----------------------------
+.nav_flex {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// -----------------------------
+// Main Section
+// -----------------------------
+
+h1 {
+    text-align: center;
+    font-size: clamp(2rem, 1.205rem + 3.39vw, 3.75rem);
+    margin-bottom: clamp(2rem, 1.432rem + 2.42vw, 3.25rem);
+    font-weight: normal;
+}
+.h1_align {
+  margin-bottom: 80px;
+}
+@media screen and (max-width: 768px) {
+    main {
+        padding: 0 22px !important;
+    }
+}
+.container{
+  padding: 0 !important;
+}
+h3 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+// -----------------------------
+// Form Styles
+// -----------------------------
+// form {
+//   width: 80%;
+//   margin: 0 auto;
+// }
+
+label,
+input,
+hr {
+  display: block;
+  font-family: "Roboto", sans-serif;
+}
+
+
+
+.form_top {
+  font-size: 1.5rem;
+}
+
+.textarea_ditail {
+  width: 100%;
+  height: 310px;
+  padding: .375rem .75rem;
+  border: solid 1px #727272;
+}
+
+hr {
+  margin: 2rem 0;
+}
+
+.formparts {
+  width: 100%;
+  padding: .375rem .75rem;
+  margin-bottom: 1.5rem;
+  border: solid 1px #727272;
+}
+
+// .form_button {
+//   display: block;
+//   margin: 100px auto 0;
+//   padding: 12px 24px;
+//   border-radius: 5px;
+//   border: none;
+//   background-color: black;
+//   color: white;
+//   transition: background-color .5s, color .5s;
+//   font-size: 18px;
+
+//   &:hover {
+//     background-color: yellow;
+//     color: black;
+//   }
+// }
+.contact-ann-small_txt{
+  margin-top: 10px;
+  display: block;
+}
+// -----------------------------
+// PHP Contact Complete
+// -----------------------------
+.echo-text__center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+// -----------------------------
+// PHP Contact footer
+// -----------------------------
+#contact-page{
+  footer{
+    margin-top: 90px;
+  }
+}
+
+
+// -----------------------------
+// 記述
+// -----------------------------
+
+.contact-ann_txt{
+  font-size: 16px;
+  text-align: center;
+  margin-top: 36px;
+  letter-spacing: 0.1rem;
+  line-height: 1.6;
+   @media screen and (max-width: 768px){
+    margin-top: 45px;
+    font-size: 14px;
+    line-height: 1.8;
+    letter-spacing: 0.05rem;
+    }
+}
+
+.cf_7__container{
+  width: 90%;
+  max-width: 915px;
+  margin:65px auto 0;
+  @media screen and (max-width: 768px){
+   margin:30px auto 0;
+   width: 100%;
+    }
+  .wpcf7-list-item{
+    margin:0 16px 0 0;
+  }
+  .re-content{
+    position: relative;
+    &::after{
+    content: "*";
+    position: absolute;
+    font-size:16px;
+    color: red;
+    top: 0;
+    line-height: 1;
+    }
+  }
+  .left-form_box{
+    width: 177px;
+    @media screen and (max-width: 768px){
+     margin-bottom: 10px;
+    }
+    label{
+      font-size: 16px;
+    }
+  }
+  .right-form_box{
+    width:calc(100% - 177px);
+    @media screen and (max-width: 768px){
+     width: 100%;
+    }
+  }
+  .req-ditail_box{
+   display: flex;
+   align-items: center;
+   padding: 60px 0;
+   border-top: solid 1px #727272;
+   border-bottom: solid 1px #727272;
+   @media screen and (max-width: 768px){
+    flex-direction: column;
+    align-items: flex-start;
+    padding:35px 0;
+   }
+   .wpcf7-list-item-label{
+    font-size: 16px;
+   }
+   .wpcf7-form-control-wrap{
+    display: block;
+    width: fit-content;
+    @media screen and (max-width: 768px){
+    width: 100%;
+    }
+    .wpcf7-form-control{
+      display: grid;
+      grid-template-columns:auto auto auto;
+      row-gap: 10px;
+      @media screen and (max-width: 768px){
+      grid-template-columns: repeat(1, 1fr);
+      width: 100%;
+      }
+      .wpcf7-list-item{
+        label{
+          display:inline-flex;
+          column-gap: 10px;
+        }
+        input[type="checkbox"]{
+          display: none;
+        }
+        .wpcf7-list-item-label{
+          position: relative;
+          padding-left: 22px;
+          @media screen and (max-width: 768px){
+          white-space: nowrap;
+          }
+          &::before{
+            content: "";
+            position: absolute;
+            display: block;
+            top: 15%;
+            left: 0;
+            width: 16px;
+            height: 16px;
+            background: white;
+            border: solid 1px #727272;
+          }
+          &::after{
+            display:none;
+          }
+        }
+        input[type="checkbox"]:checked ~ .wpcf7-list-item-label::after{
+          content: "";
+          display: block;
+          position: absolute;
+          top: 15%;
+          left: 0;
+          width: 16px; /* 中の色のサイズ */
+          height: 16px;
+          background:url(../img/contact/form-check_icon.svg) center center / 90% no-repeat; /* 選択時の色 */
+          background-color:black;
+        }
+        // input[type="checkbox"]:not(:checked) ~ .wpcf7-list-item-label::after{
+        // display: none !important;
+        // }
+      }
+     }
+    }
+  }
+  .others-daital_box{
+    margin-top: 60px;
+    @media screen and (max-width: 768px){
+     margin-top: 35px;
+    }
+    .right-form_box{
+      .addres-content-top{
+      display: flex;
+      align-items: center;
+      column-gap: 10px;
+      margin-bottom: 16px;
+        input[name="your-address01"]{
+          width:94px;
+          padding: 11px 4px;
+          border-radius: inherit;
+          border: solid 1px #727272;
+        }
+        input[name="your-address02"]{
+          width: 110px;
+          padding: 11px 4px;
+          border-radius: inherit;
+          border: solid 1px #727272;
+        }
+      }
+      input[name="your-address03"]{
+         width:100%;
+          padding: 11px 4px;
+          border-radius: inherit;
+          border: solid 1px #727272;
+      }
+      textarea[name="your-ditail"]{
+        width: 100%;
+        padding: 11px 4px;
+      }
+      // .fail-ann_txt{
+      //   margin-bottom: 16px;
+      // }
+      .file-label{
+        position: relative;
+        width: 142px;
+        height: 38px;
+        // background:white;
+        // border: solid 1px #727272;
+        &:nth-of-type(1){
+          margin-bottom: 10px;
+        }
+        // .wpcf7-form-control-wrap{
+        //   display: contents;
+        //   input[type=file]{
+        //     display: none;
+        //   }
+        // }
+        // .input-text{
+        //   position: absolute;
+        //   top: 50%;
+        //   left: 13px;
+        //   transform: translateY(-50%);
+        // }
+        // .input-name{
+        //     display: block;
+        //     position: absolute;
+        //     top: 50%;
+        //     transform: translateY(-50%);
+        //     left: 150px;
+        //     white-space: nowrap;
+        //     font-size: 14px;
+        // }
+      }
+    }
+    .others-daital_item{
+      display: flex;
+      align-items: center;
+      margin-bottom: 40px;
+      width: 100%;
+       @media screen and (max-width: 768px){
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 35px;
+      }
+      &:nth-child(5){
+         align-items: flex-start;
+      }
+    }
+    select,
+    input[name="e-mail"],
+    input[name="your-tel"]{
+      padding: 11px 4px;
+      border-radius: inherit;
+      border: solid 1px #727272;
+      width: 100%;
+      background-color: #fff;
+    }
+    .select-box{
+      position: relative;
+      width: fit-content;
+       .select-icon_bg{
+        position: absolute;
+        right: 2px;
+        top: 49%;
+        transform: translateY(-50%);
+        display: block;
+        width: 40px;
+        height: 40px;
+        background:url(../img/contact/select-icon.svg) center center / cover no-repeat;
+      }
+    }
+    select{
+      padding: 11px 4px;
+      border-radius: inherit;
+      width: 245px;
+    }
+  }
+}
+// -----------------------------
+// Responsive
+// -----------------------------
+@media screen and (max-width: 768px) {
+  .form_top {
+    font-size: 18px;
+  }
+
+  // form {
+  //   width: 100%;
+  //   margin: 0 auto;
+  // }
+}
+
+

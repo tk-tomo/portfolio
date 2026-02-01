@@ -1,0 +1,79 @@
+@charset "UTF-8";
+#archive-work_all{
+    .container_fild{
+        margin-top: 192px;
+        @media screen and (max-width: 768px) {
+            margin-top:80px;
+        }
+        .work{
+            text-align: center;
+            font-size: clamp(2rem, 1.205rem + 3.39vw, 3.75rem);
+            margin-bottom: clamp(2rem, 1.432rem + 2.42vw, 3.25rem);
+            font-weight: normal;
+        }
+        .archive-btn_box{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            row-gap: 20px;
+            @media screen and (max-width: 768px) {
+                display: flex;
+                flex-direction: column;
+                row-gap: 16px;
+            }
+            .archive-btn_box-item{
+                text-align: center;
+                width: 49%;
+                padding: 10px 0;
+                border: 1px #333333 solid;
+                background-color: #E9E9E9;
+                font-size: 14px;
+                letter-spacing: 0.08rem;
+                transition:background-color 0.3s, color 0.3s;
+                @media screen and (max-width: 768px) {
+                    width: 100%;
+                }
+                &.hover_active{
+                    background-color: #333333;
+                    color: white;
+                }
+                &:hover{
+                    background-color: #333333;
+                    color: white;
+                }
+                // &:hover{
+                   
+                //     transition:color 0.3s;
+                // }
+            }
+        }
+        .flex_section{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            margin-top: 78px;
+            .work_box{
+                width: 32.5%;
+                margin-bottom: 64px;
+                @media screen and (max-width: 768px) {
+                    width: 100%;
+                }
+                div{
+                    display: flex;
+                    align-items: flex-end;
+                    justify-content: space-between;
+                    margin-top: 12px;
+                    h3{
+                        font-size: 12px;
+                        font-weight: normal;
+                    }
+                    p{
+                        font-size: 10px;
+                        color: gray;
+                    }
+                }
+            }
+        }
+    }
+}

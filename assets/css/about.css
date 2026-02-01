@@ -1,0 +1,184 @@
+h1 {
+  text-align: center;
+  font-size: clamp(2rem, 1.205rem + 3.39vw, 3.75rem);
+  margin-bottom: clamp(2rem, 1.432rem + 2.42vw, 3.25rem);
+  font-weight: normal;
+}
+
+main {
+  margin-top: 192px;
+}
+@media screen and (max-width: 768px) {
+  main {
+    margin-top: 100px;
+  }
+}
+
+.nav_flex {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main_flex {
+  position: relative;
+}
+
+.main_flex_right {
+  position: relative;
+  margin-left: auto;
+  width: 60vw;
+  z-index: -1;
+}
+.main_flex_right > img {
+  width: 100%;
+}
+
+.main_flex_left {
+  width: 40vw;
+}
+.main_flex_left > div {
+  position: absolute;
+  background-color: black;
+  left: 60%;
+  top: 27%;
+  height: 1px;
+  width: 8vw;
+  z-index: 2;
+}
+
+.Profession {
+  font-family: "Roboto", sans-serif;
+  position: absolute;
+  writing-mode: vertical-rl;
+  background-color: rgba(255, 255, 0, 0.3);
+  width: 65%;
+  height: 28%;
+  padding: 1% 10% 0px 0px;
+  font-size: 5vw;
+  font-weight: 100;
+  margin-top: 10%;
+  z-index: 1;
+}
+
+.name {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  position: absolute;
+  margin-top: 50%;
+  font-size: 7vw;
+  left: 20%;
+}
+
+.main2_section {
+  margin: 80px 10% 0px 10%;
+  border-top: solid gray 1px;
+  border-bottom: solid gray 1px;
+  padding: 40px 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.main2_section > div {
+  font-size: 16px;
+  width: 30%;
+}
+
+dl {
+  width: 45%;
+  font-size: 14px;
+}
+dl div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+}
+dl div dd {
+  line-height: 1.8rem;
+}
+dl > div:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.none_margin {
+  margin: 0;
+}
+
+.Strength {
+  margin: 0 10% 0 10%;
+  border-bottom: solid gray 1px;
+  padding: 40px 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.Strength h3 {
+  font-size: 18px;
+  width: 30%;
+}
+.Strength dl {
+  width: 45%;
+  font-size: 14px;
+}
+.Strength dl > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: center;
+  flex-direction: column;
+}
+.Strength dl dd {
+  line-height: 1.8rem;
+}
+
+@media screen and (max-width: 768px) {
+  .main2_section {
+    flex-direction: column;
+    padding: 24px 0 24px;
+    margin: 80px 0 0px;
+  }
+  .main2_section h3 {
+    width: 100%;
+  }
+  .main2_section dl {
+    width: 100%;
+    margin-top: 45px;
+  }
+  .Strength {
+    flex-direction: column;
+    padding: 24px 0 24px;
+    margin: inherit;
+  }
+  .Strength h3 {
+    width: 100%;
+  }
+  .Strength dl {
+    width: 100%;
+    margin-top: 45px;
+  }
+  .main_flex_right {
+    width: 80%;
+  }
+  .name {
+    font-size: 9vw;
+    left: 10%;
+    top: 20%;
+  }
+  .Profession {
+    text-align: center;
+    font-size: 6vw;
+    margin-top: 15%;
+    width: 92%;
+    height: 53%;
+  }
+  .main_flex_left > div {
+    display: none;
+  }
+  .designer-txt {
+    display: none;
+  }
+}/*# sourceMappingURL=about.css.map */

@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../reset.min.css">
+    <link rel="stylesheet" href="news_list.css">
+    <link rel="stylesheet" href="../../menu.css">
+    <!-- rellax -->
+    <!-- <script src="js/rellax.min.js"></script> -->
+    <!-- swiper -->
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <!-- グーグルフォント -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Serif+JP:wght@200..900&display=swap" rel="stylesheet">
+    <title>News.02</title>
+</head>
+<body>
+    <div id="js-mouse">
+        <!-- <p>viwe</p> -->
+    </div>
+    <header>
+        <section class="fv_content">
+            <nav class="header_nav">
+                <div class="header-nav__padding header-nav__flex">
+                    <h1 class="logo">
+                        <a href="../../index.html"><img src="../../img/rogo.svg" alt=""></a>
+                    </h1>
+                    <ul class="head_right_list">
+                        <li class="head_right_cartbox">
+                            <a href="">
+                                <div class="header__link-wrapper">
+                                    <span>カート</span>
+                                    <span id="CartCount">
+                                        <span>0</span>
+                                    </span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <div class="hamburger">
+                                <span class="inner_line" id="line1"></span>
+                                <span class="inner_line" id="line2"></span>
+                                <span class="inner_line" id="line3"></span>
+                            </div>  
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="hamburger_open_content">
+                <div class="globalMenuPc">
+                    <div>
+                        <ul class="header-nav__flexPc">
+                            <li>
+                                <a href="" class="icon_box">
+                                    <span>ログイン</span>
+                                    <span class="person_icon icon"><img src="../../img/person_icon.svg" alt=""></span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="icon_box">
+                                    <span>お気に入り</span>
+                                    <span class="heart_icon icon"><img src="../../img/heart_icon.svg" alt=""></span>
+                                </a>
+                            </li>
+                            <li class="head_right_cartbox min-width768px">
+                                <a href="">
+                                    <div class="header__link-wrapper">
+                                        <span>カート</span>
+                                        <span id="CartCount">
+                                            <span>0</span>
+                                        </span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="sp_CartCount_flex">
+                                <div class="hamburger">
+                                    <span class="inner_line" id="line1"></span>
+                                    <span class="inner_line" id="line3"></span>
+                                </div> 
+                                <div class="head_right_cartbox max-width768px">
+                                    <a href="">
+                                        <div class="header__link-wrapper">
+                                            <span>カート</span>
+                                            <span id="CartCount">
+                                                <span>0</span>
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="globalMenuPc_section">
+                            <li><a href="../../index.html#features" class="drawer__nav__link"><span>Features</span><span>小松トマトについて</span></a></li>
+                            <li><a href="../../index.html#brand_vision" class="drawer__nav__link"><span>Brand vision</span><span>企業理念</span></a></li>
+                            <li><a href="../../index.html#Journal" class="drawer__nav__link"><span>Journal</span><span>定期日誌</span></a></li>
+                            <li><a href="../../product_file/product_menu.html" class="drawer__nav__link"><span>Product</span><span>製品</span></a></li>
+                            <li><a href="../../news_file/news_menu.html" class="drawer__nav__link"><span>News</span><span>お知らせ</span></a></li>
+                        </ul>
+                        <ul class="globalMenuPc_sns">
+                            <li><a href="" class="icon_box"><span class="sns_icon_size"><img src="../../img/x_hover.svg" alt=""></span><span>X</span></a></li>
+                            <li><a href="" class="icon_box"><span class="sns_icon_size"><img src="../../img/facebook_hover.svg" alt=""></span><span>Facebook</span></a></li>
+                            <li><a href="" class="icon_box"><span class="sns_icon_size"><img src="../../img/instagram_hover.svg" alt=""></span><span>Instagram</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="hamburger_img_content">
+                    <div class="hamburger_img">
+                        <img src="../../img/hanburger_img.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main>
+    <!-- ニュースcontentセクション -->
+        <section class="container_fild">
+            <div class="news_content_container">
+                <div class="news_content_inner">
+                    <div class="article_title_area">
+                        <div class="article_title_area__left">
+                            <p class="meta-text-area">
+                                <span>ニュース</span>
+                                <span>2024.10.25</span>
+                            </p>
+                            <h2>小松トマトのケチャップ<br>komato ketchupを発売致しました</h2>
+                        </div>
+                        <div class="article_title_area__right">
+                            <img src="../news_img/news_ketchup.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="share_link_area pc_content">
+                        <ul>
+                            <li>シェアする</li>
+                            <li><a href=""><img src="../../img/x_hover.svg" alt=""></a></li>
+                            <li><a href=""><img src="../../img/facebook_hover.svg" alt=""></a></li>
+                            <li><a href=""><img src="../../img/instagram_hover.svg" alt=""></a></li>
+                        </ul>
+                    </div>
+                    <section class="article_main_fild">
+                        <div class="article_main_container">
+                            <h3>2024/10/25日小松トマトのケチャップ<br>
+                                komato ketchupを発売致しました!</h3>
+                                <p>小松産完熟トマトを贅沢に使用した、濃厚な旨みと自然な甘みが際立つケチャップです。北陸最大のトマト産地である小松市で、太陽をたっぷり浴びて育った真っ赤なトマトを、生産者が丁寧に手作業で収穫。もぎたての新鮮なトマトをすぐに加工することで、トマト本来の風味を最大限に引き出しています。着色料・保存料は一切不使用。お子様から大人まで、安心してお召し上がりいただけます。オムレツやパスタ、炒め物など、様々な料理にコクと深みをプラス。いつもの食卓をより一層美味しく彩ります。小松の大地の恵みが詰まった、こだわりの逸品をぜひお試しください。</p>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </section>
+         <!-- ニュースセクション -->
+         <section class="container_fild">
+            <div class="news_section_container">
+                <div class="hedding-box">
+                    <h2 class="template_hedding">News</h2>
+                    <div class="view_all_btn">
+                        <a href="../../news_file/news_menu.html">
+                            <div class="view_all_btnContent">
+                                <span>View All</span>
+                                <div class="journal_red_arrow_size">
+                                    <img src="../../img/red_arrow.svg" alt="">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- スワイパー -->
+                <!-- Slider main container -->
+                <div class="card02 inview fadeIn_up">
+                    <div class="swiper_container swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide swiper-box">
+                                <a href="news_list4.html">
+                                    <div class="swiper_content">
+                                        <span class="swiper-day-text">2024.12.28</span>
+                                        <p class="swiper-text">小松トマトのリゾット<br class="max-width768px"><span>komato Risotto</span>を発売致しました。</p>
+                                        <div class="swiper-viewMore-flex">
+    
+                                            <p class="swiper-arrow-flex">
+                                                <span>View More</span>
+                                                <div class="swiper_redArrow"><img src="../../img/red_arrow.svg" alt=""></div>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide swiper-box">
+                                <a href="news_list3.html">
+                                    <div class="swiper_content">
+                                        <span class="swiper-day-text">2024.11.16</span>
+                                        <p class="swiper-text">小松トマトのスムージ<br class="max-width768px"><span>komato Smoothie</span>を発売致しました。</p>
+                                        <div class="swiper-viewMore-flex">
+    
+                                            <p class="swiper-arrow-flex">
+                                                <span>View More</span>
+                                                <div class="swiper_redArrow"><img src="../../img/red_arrow.svg" alt=""></div>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide swiper-box">
+                                <a href="#">
+                                    <div class="swiper_content">
+                                        <span class="swiper-day-text">2024.10.25</span>
+                                        <p class="swiper-text">小松トマトのケチャップ<br class="max-width768px"><span>komato Ketchup</span>を発売致しました。</p>
+                                        <div class="swiper-viewMore-flex">
+    
+                                            <p class="swiper-arrow-flex">
+                                                <span>View More</span>
+                                                <div class="swiper_redArrow"><img src="../../img/red_arrow.svg" alt=""></div>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide swiper-box">
+                                <a href="news_list1.html">
+                                    <div class="swiper_content">
+                                        <span class="swiper-day-text">2024.10.20</span>
+                                        <p class="swiper-text">小松トマト加工品ブランド<br class="max-width768px">立ち上げました。</p>
+                                        <div class="swiper-viewMore-flex">
+                                            <p class="swiper-arrow-flex">
+                                                <span>View More</span>
+                                                <div class="swiper_redArrow"><img src="../../img/red_arrow.svg" alt=""></div>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- If we need scrollbar -->
+                        <!-- <div class="swiper-scrollbar"></div> -->
+                    </div>
+                </div>
+            </div>
+    </main>
+        <footer>
+           <section class="footer_section">
+               <div class="snsList_section">
+                    <ul class="snsList_section_flex">
+                        <li>
+                            <a href="" class="snsList_content">
+                                <div class="snsList_hedding">
+                                    <h4>Instagram</h4>
+                                    <p>インスタグラム</p>
+                                </div>
+                                <div class="snsIcon">
+                                    <img src="../../img/instagram_hover.svg" alt="" width="20px" height="20px">
+                                    <img src="../../img/instagram.svg" alt="" width="20px" height="20px">
+                                </div>
+                                <p>商品の写真を多く<br>
+                                    投稿させて頂いております。</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="snsList_content">
+                                <div class="snsList_hedding">
+                                    <h4>X</h4>
+                                    <p>エックス</p>
+                                </div>
+                                <div class="snsIcon">
+                                    <img src="../../img/x_hover.svg" alt="" width="20px" height="20.45px">
+                                    <img src="../../img/x.svg" alt="" width="20px" height="20.45px">
+                                </div>
+                                <p>商品の写真を多く<br>
+                                    投稿させて頂いております。</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="snsList_content">
+                                <div class="snsList_hedding">
+                                    <h4>Instagram</h4>
+                                    <p>インスタグラム</p>
+                                </div>
+                                <div class="snsIcon">
+                                    <img src="../../img/facebook_hover.svg" alt="" width="20px" height="19.87px">
+                                    <img src="../../img/facebook.svg" alt="" width="20px" height="19.87px">
+                                </div>
+                                <p>商品の写真を多く<br>
+                                    投稿させて頂いております。</p>
+                            </a>
+                        </li>
+                    </ul>
+               </div>
+               <div class="footer_grobal_section">
+                   <div class="footer_grobal_flex">
+                        <div class="footer_grobal_left">
+                            <div class="footer_rogo"><img src="../../img/footer_rogo.svg" alt=""></div>
+                        </div>
+                        <div class="footer_grobal_rigth">
+                            <div class="grobal_flex_wrap">
+                                <ul class="footer_grobal_list">
+                                    <li><a href="../../index.html#features">Features</a></li>
+                                    <li><a href="../../index.html#brand_vision" style="
+                                        white-space: nowrap;
+                                    ">Brand vision</a></li>
+                                    <li><a href="../..index.html#Journal">Journal</a></li>
+                                </ul>
+                                <ul class="footer_grobal_list grobal_wrap">
+                                    <li><a href="../../product_file/product_menu.html">Product</a></li>
+                                    <li><a href="../news_file/news_menu.html">News</a></li>
+                                </ul>
+                            </div>
+                            <span></span>
+                            <p class="copy">All Rights Reserved 2024 ©︎ kohigashi tomorou</p>
+                        </div>
+                   </div>
+               </div>
+            </section>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inview/1.0.0/jquery.inview.min.js"></script>
+        <script src="../../js/parallax.min.js"></script>
+        <script src="../../js/option.js"></script>
+        <script src="../../js/rellax.js"></script>
+        <script src="../../js/style.js"></script>
+</body>
+</html>
